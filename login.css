@@ -114,4 +114,7 @@ body {
     padding: 5.7rem 2.4rem;
     height: 100%;
   }
+  .lock-screen h1 {
+    padding-bottom: 50px;
+  }
 }
