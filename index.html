@@ -1,26 +1,41 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="tr">
   <head>
-    <link rel="stylesheet" href="login.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- sekme-logo -->
     <link rel="icon" type="image/png" href="images/222.png" />
     <!-- sekme-logo -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
-    <div class="password">
-      <div class="logo">
-        <img src="images/222.png" alt="" />
-      </div>
-      <h1>Hoş Geldiniz</h1>
-      <p>Lütfen geçmek için şifrenizi girin:</p>
-      <input type="password" id="password" placeholder="Şifre" />
-      <button onclick="checkPassword()">Giriş</button>
+    <div class="logo">
+      <img src="images/222.png" alt="Profile Picture" />
     </div>
+    <div class="container">
+      <div class="lock-screen-container">
+        <div class="lock-screen">
+          <h1>Yorum Yönetim Sistemi</h1>
+          <form id="loginForm">
+            <div class="profile">
+              <p>Merhaba, Bekir Tek 👋</p>
+            </div>
+            <div class="input-group">
+              <input type="password" id="password" placeholder="Şifre" />
+              <span class="toggle-password">
+                <i class="bi bi-eye" id="toggleIcon"></i>
+              </span>
+            </div>
+            <button type="submit">Giriş</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
-
-  <script src="main.js"></script>
 </html>
