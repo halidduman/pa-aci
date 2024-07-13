@@ -1,0 +1,121 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: url(images/bakcground.svg);
+  background-repeat: repeat;
+  background-size: 100px;
+}
+/* logo */
+
+/* başlık */
+.tittle {
+  background-color: #d93333;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  height: 100px;
+}
+
+.tittle h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+/* başlık */
+
+.image-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background: url(images/gorsel-corba.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.image-logo img {
+  height: 200px;
+  position: absolute;
+}
+
+/* düğmeler */
+
+.btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  transition: all 0.3s;
+}
+
+.btn a {
+  display: flex;
+
+  margin: 0 auto;
+  color: aliceblue;
+  width: 200px;
+  padding: 15px 15px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s;
+  background-color: #d93333;
+  color: black;
+  text-decoration: none;
+}
+
+.btn a p {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.btn a:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: #d93333;
+  background-color: rgb(79, 79, 79);
+  transform: scale(1.1);
+}
+
+.exit {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+/* responsive */
+
+@media (max-width: 1480px) {
+  .btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 20px;
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 1160px) {
+  .btn {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 512px) {
+  .btn {
+    grid-template-columns: 1fr;
+  }
+}
