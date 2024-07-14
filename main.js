@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const togglePasswordIcon = document.getElementById("toggleIcon");
   const form = document.getElementById("loginForm");
 
-  const correctPassword = "12345"; // şifreyi buradan değiştirin
+  const correctPassword = "12345"; // şifreyi buradan değiştirebilirsiniz.
 
   togglePasswordIcon.addEventListener("click", function () {
     const type =
