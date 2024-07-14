@@ -144,6 +144,7 @@ body {
   }
 
   .lock-screen button {
-    padding: 10px 105px;
+    padding: 10px 107px;
+    width: 240, 25;
   }
 }
