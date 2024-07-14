@@ -46,6 +46,11 @@ body {
   height: 100%;
 }
 
+.lock-screen img {
+  height: 100px;
+  transform: translate(0, -50px);
+}
+
 .lock-screen h1 {
   margin-bottom: 0.5rem;
   font-size: 20px;
